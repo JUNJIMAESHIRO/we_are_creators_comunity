@@ -1,0 +1,143 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.header-top {
+  display: flex;
+}
+
+.header-left {
+  margin: 25px 0px 0px 20px;
+}
+
+.header-main-text a {
+  color: inherit;
+}
+
+.header-sub-text {
+  text-align: right;
+  font-size: 10px;
+  margin: 5px 0px 27px 36px;
+}
+
+.header-sub-text a {
+  color: inherit;
+}
+
+.header-entry {
+  width: 280px;
+  height: 30px;
+  border: solid 1px black;
+  margin: 0px auto 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-entry a {
+  color: inherit;
+}
+
+.bg-img1 {
+  width: 100%;
+  height: 306px;
+  background-image: url(../img/background-img1.jpeg);
+}
+
+.bg-img1 h2 {
+  color:rgb(69, 29, 160);
+  font-size: 40px;
+  line-height: 1.2em;
+  padding: 30px 0px 10px 20px;
+}
+
+.bg-img1 p {
+  font-size: 13px;
+  color: inherit;
+  padding-left: 20px;
+}
+
+.border-block {
+  width: 80px;
+  margin: 0 auto;
+}
+
+.border-line {
+  content: "";
+  border: solid 1px black;
+  transform: rotate(90deg);
+  width: 80px;
+}
+
+.content-main-title {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(69, 29, 160);
+}
+
+.content-main-title {
+  margin-top: 50px;
+}
+
+.content-main-title::after{
+  display: block;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  padding: 4px 0px 31px 0px;
+}
+
+#aboutus .content-main-title::after {
+  content: "私たちについて";
+}
+
+.aboutus-board {
+  text-align: center;
+}
+
+.white-board {
+  width: 280px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  top: -80px;
+  text-align: center;
+}
+
+.white-board-title {
+  line-height: 1.5em;
+  font-size: 19px;
+  width: 240px;
+  margin: 0 auto;
+  padding: 20px 0 17px 0;
+  text-align: center;
+}
+
+.white-board-text {
+  width: 250px;
+  font-size: 12px;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
+.lmbutton{
+  width: 160px;
+  height: 42px;
+  margin: 0 auto 64px;
+  text-align: center;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lmbutton a{
+  color: inherit;
+  font-size: 10px;
+  font-weight: bolder;
+}
+

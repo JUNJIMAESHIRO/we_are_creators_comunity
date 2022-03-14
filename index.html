@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="js">
+<html lang="ja">
 <head>
   <!-- ここからMeta情報 -->
   <meta charset="UTF-8">
@@ -12,40 +12,37 @@
 </head>
 <body>
   <header>
-    <div>
-      <div>
-        <p class="header-main-text">X - FACTOR</p>
-        <p class="header-sub-text">RECRUIT SITE</p>
+    <div class="header-top">
+      <div class="header-left">
+        <h1 class="header-main-text">
+          <a href="#">X&nbsp; - FACTOR</a>
+        </h1>
+        <p class="header-sub-text">
+          <a href="#">RECRUIT SITE</a>
+        </p>
       </div>
       <!-- ここからhamberger-menuのhtml -->
-      <div class="hamburger-menu">
-        <input type="checkbox" id="menu-btn-check">
-        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <div class="header-right">
         <!-- ここからAction後に表示されるメニュー -->
-        <div class="menu-content">
+        <!-- <nav id="menu-content">
           <ul>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">People</a>
-            </li>
-            <li>
-              <a href="#">Culture</a>
-            </li>
-            <li>
-              <a href="#">Careers</a>
-            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Careers</a></li>
           </ul>
-        </div>
-        <!-- ここからAction後に表示されるメニュー -->
+        </nav> -->
+        <!-- ここまでAction後に表示されるメニュー -->
+        <!-- <div id="hamburger">
+          <span class="line" id="line1"></span>
+          <span class="line" id="line2"></span>
+          <span class="line" id="line3"></span>
+        </div> -->
       </div>
     </div>
-    <div>
-      <!-- ENTRYボタンボタン全体をリンク -->
-      <a href="#">
-        <span>ENTRY</span>
-      </a>
+    <div class="header-entry">
+      <!-- ENTRYボタンボタン全体をリンク化 -->
+      <a href="#">ENTRY</a>
     </div>
   </header>
 
@@ -55,42 +52,38 @@
         <img src="./assets/img/wecre-img1.jpeg" width="320px" height="280px" alt="オフィスに立つ女性の画像" class="js-animation">
       </div>
       <div>
-        <div>
-          <!-- 画像の中にテキストが入る -->
-          <img src="./assets/img/background-img1.jpeg" width="320px" height="306px" alt="グラデーションの画像" class="js-animation">
-        </div>
-        <div>
-          <h1>
+        <div class="bg-img1"><!-- cssでbackground-img1を適用させる -->
+          <!-- 画像の中に下記のテキストが入る -->
+          <h2>
             Perform<br>
             at Your Full<br>
             Potential
-          </h1>
+          </h2>
+          <p>
+            自分にしかない可能性で、<br>
+            デジタルマーケティング業界に変化を。
+          </p>
         </div>
       </div>
     </div>
     <div class="border-block">
-      <div>
-      <!-- 棒線をBroderで指定するためのブロック要素 -->
-      </div>
+      <!-- 擬似要素で::before棒線を作る -->
+      <div class="border-line"></div>
     </div>
   </section>
   <section id="aboutus">
+    <h2 class="content-main-title">About Us</h2>
+    <!-- ::after私たちについて -->
     <div>
-      <div>
-        <h2 class="content-main-title"><span>About Us</span></h2>
-        <h3 class="content-sub-title"><span>私たちについて</span></h3>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div>
-          <img src="./assets/img/wecre-img2.jpeg" alt="ミーティング画像" width="320px" height="280px">
-        </div>
+      <div class="aboutus-board">
+        <img src="./assets/img/wecre-img2.jpeg" alt="ミーティング画像" width="320px" height="280px">
         <div class="white-board">
-          <span>
-            ビッグデータ x AIの力で、マーケティング業界に革命を起こす。
-          </span>
-          <p>
+          <p class="white-board-title">
+            ビッグデータ x AIの力で、<br>
+            マーケティング業界に革命<br>
+            を起こす。
+          </p>
+          <p class="white-board-text">
             あなたのビジネスを紹介する長めのテキスト<br>
             にぴったりなスペースです。このスペースを<br>
             活用して、サービスの特徴やおすすめしたい<br>
@@ -103,25 +96,20 @@
             らうことから始めましょう。
           </p>
         </div>
-        <div>
-          <a href="#">
-            <span>LEARN MORE</span>
-          </a>
-        </div>
+      </div>
+      <div class="lmbutton" >
+        <a href="#">LEARN MORE</a>
       </div>
     </div>
   </section>
   <div class="border-block">
-    <div>
-    <!-- 棒線をBroderで指定するためのブロック要素 -->
-    </div>
+    <!-- 擬似要素::beforeで棒線を作る -->
+    <div class="border-line"></div>
   </div>
   <section id="interviews">
     <div>
-      <div>
-        <h2 class="content-main-title"><span>Interviews</span></h2>
-        <h3 class="content-sub-title"><span>新卒、中途で活躍する先輩達の体験談。</span></h3>
-      </div>
+      <h2 class="content-main-title"><span>Interviews</span></h2>
+      <!-- 擬似要素::after新卒、中途で活躍する先輩達の体験談。 -->
     </div>
     <div class="interviews-container">
       <div class="interview-card">
@@ -129,18 +117,17 @@
           <img src="./assets/img/wecre-img3.jpeg" alt="女性社員の写真" width="320px" height="419px">
         </div>
         <div class="interview-content">
-          <div class="position">
-            <span>新卒入社 | アカウントプランナー</span>
-          </div>
-          <div class="aword-employee">
-            <span>毎日が自分との戦い、その先にあるのは大きな成長。</span>
-          </div>
-          <div>
-            <span class="line"></span>
-            <span>
-              <a href="#">MORE</a>
-            </span>
-          </div>
+          <span class="position">
+            新卒入社 | アカウントプランナー
+          </span>
+          <span class="aword-employee">
+            毎日が自分との戦い、その先<br>
+            にあるのは大きな成長。
+          </span>
+          <span class="line">
+            <!-- 擬似要素::beforeで横のラインを作る -->
+            <a href="#">MORE</a>
+          </span>
         </div>
       </div>
       <div class="interview-card">
@@ -148,18 +135,16 @@
           <img src="./assets/img/wecre-img4.jpeg" alt="男性社員の写真" width="320px" height="419px">
         </div>
         <div class="interview-content">
-          <div class="position">
-            <span>新卒入社 | クリエイティブディレクター</span>
-          </div>
-          <div class="aword-employee">
-            <span>「あそび」こそ最大のクリエイティブ。</span>
-          </div>
-          <div>
-            <span class="line"></span>
-            <span>
-              <a href="#">MORE</a>
-            </span>
-          </div>
+          <span class="position">
+            新卒入社 | クリエイティブディレクター
+          </span>
+          <span　class="aword-employee">
+            「あそび」こそ最大のクリエイティブ。
+          </span>
+          <span class="line">
+            <!-- 擬似要素::beforeで横のラインを作る -->
+            <a href="#">MORE</a>
+          </span>
         </div>
       </div>
     </div>
@@ -169,18 +154,16 @@
           <img src="./assets/img/wecre-img5.jpeg" alt="男性社員の写真" width="320px" height="419px">
         </div>
         <div class="interview-content">
-          <div class="position">
-            <span>中途入社 | マーケティングディレクター</span>
-          </div>
-          <div class="aword-employee">
-            <span>マーケティグを極めて、いつか自分の事業を立ち上げたい。</span>
-          </div>
-          <div>
-            <span class="line"></span>
-            <span>
-              <a href="#">MORE</a>
-            </span>
-          </div>
+          <span class="position">
+            中途入社 | マーケティングディレクター
+          </span>
+          <span class="aword-employee">
+            マーケティグを極めて、いつか自分の事業を立ち上げたい。
+          </span>
+          <span class="line">
+            <!-- 擬似要素::beforeで横のラインを作る -->
+            <a href="#">MORE</a>
+          </span>
         </div>
       </div>
       <div class="interview-card">
@@ -188,27 +171,25 @@
           <img src="./assets/img/wecre-img6.jpeg" alt="女性社員の写真" width="320px" height="419px">
         </div>
         <div class="interview-content">
-          <div class="position">
-            <span>新卒入社 | アナリスト</span>
-          </div>
-          <div class="aword-employee">
-            <span>データの力で、誰かの人生を変える仕事をしたい。</span>
-          </div>
-          <div>
-            <span class="line"></span>
-            <span>
-              <a href="#">MORE</a>
-            </span>
-          </div>
+          <span class="position">
+            新卒入社 | アナリスト
+          </span>
+          <span class="aword-employee">
+            データの力で、誰かの人生を変える仕事をしたい。
+          </span>
+          <span class="line">
+            <!-- 擬似要素::beforeで横のラインを作る -->
+            <a href="#">MORE</a>
+          </span>
         </div>
       </div>
     </div>
   </section>
   <section id="culture">
-    <div><!-- backgroundで画像を貼る為の要素-->
+    <div><!-- ←cssのbackgroundで画像を貼る-->
       <div>
         <h2 class="content-main-title"><span>Culture</span></h2>
-        <h3 class="content-sub-title"><span>働く環境や制度について</span></h3>
+        <!-- 擬似要素::after　働く環境や制度について -->
         <p>        
           テキストの例です。ここをクリックして「テキス<br>
           トを編集」を選択するか、ここをダブルクリック<br>
@@ -216,13 +197,16 @@
           ォントを変更することもできます。
         </p>
       </div>
-      <div><!-- positionで親要素を基準に場所を設定する -->
-        <img src="./assets/img/wecre-img7.jpeg" width="140px" height="159px" alt="ソファに座ってパソコンを触る男性">
-      </div>
-      <div><!-- positionで親要素を基準に場所を設定する -->
-        <img src="./assets/img/wecre-img8.jpeg" width="259px" height="186px" alt="オフィスで微笑む女性">
+      <div class="culture-2img">
+        <div><!-- positionで親要素を基準に場所を設定する -->
+          <img src="./assets/img/wecre-img7.jpeg" width="140px" height="159px" alt="ソファに座ってパソコンを触る男性">
+        </div>
+        <div><!-- positionで親要素を基準に場所を設定する -->
+          <img src="./assets/img/wecre-img8.jpeg" width="259px" height="186px" alt="オフィスで微笑む女性">
+        </div>
       </div>
     </div>
+    <!-- 下記の要素の擬似要素::beforeで棒線を作る -->
     <div class="c-content-container">
       <div class="c-content-box">
         <span class="c-content">駅から徒歩5分</span>
@@ -259,14 +243,14 @@
   <section id="gallery">
     <div>
       <h2 class="content-main-title"><span>Gallery</span></h2>
-      <h3 class="content-sub-title"><span>ギャラリー</span></h3>
+      <!-- 擬似要素::after　ギャラリー -->
     </div>
     <div>
       <div>
         <img src="./assets/img/background-img3.jpeg" width="320px" height="279px" alt="グラデーション背景画像">
       </div>
       <div><!-- padding -->
-        <picture>
+        <picture>　
           <img src="./assets/img/wecre-slide-img1.webp" width="280px" height="268px" alt="ギャラリー画像">
           <source srcset="./assets/img/wecre-slide-img2.jpeg">
           <source srcset="./assets/img/wecre-slide-img3.jpeg">
@@ -280,100 +264,82 @@
       </div>
     </div>
   </section>
-  <footer>
-    <section> 
+  <section id="entry"> 
+    <div class="entry-block">
       <div>
-        <div>
-          <p><h2>ENTRY</h2></p>
-        </div>
-        <div>
-          <p><h3>自分を信じて突き進め</h3></p>
-        </div>
-        <div>
-          <p>
-            <span>
-              X Factoryでは、マーケティング事業だけでなく<br>
-              様々な新しいことに挑戦をし続けています。自分<br>
-              の可能を発見し、社会で活躍をしたい。そのよう<br>
-              な方々からのご応募をお待ちしております。
-            </span>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span><a href="#">新卒採用</a></span>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span><a href="#">中途採用はこちら</a></span>
-          </p>
-        </div>
+        <h2 class="footer-title">ENTRY</h2>
+        <!-- 擬似要素::after　RECRUIT SITE -->
       </div>
-    </section>
-    <section>
       <div>
-        <div>
-          <p>
-            <h1<a href="#">X-FACTOR</a></span>
-          </p>
-        </div>
-        <div>
-          <p><h2>RECRUIT SITE</h2></p>
-        </div>
-        <div>
-          <p>
-            <span><a href="#" class="footer-content">ABOUT</a></span>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span><a href="#" class="footer-content">People</a></span>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span><a href="#"　class="footer-content">Culture</a></span>
-          </p>
-        </div>
-        <div>
-          <p>
-            <span><a href="#"　class="footer-content">Careers</a></span>
-          </p>
-        </div>
-      </div>
-      <div class="addres">
         <p>
           <span>
-              〒123-4567<br>
-              東京都新宿区西新宿 0-0-0<br>
-              TEL: 12-3456-7890
+            X Factoryでは、マーケティング事業だけでなく<br>
+            様々な新しいことに挑戦をし続けています。自分<br>
+            の可能を発見し、社会で活躍をしたい。そのよう<br>
+            な方々からのご応募をお待ちしております。
           </span>
         </p>
       </div>
       <div>
-        <a href="#">
-          <span>
-            コーポレートサイト
-          </span>
-        </a>
-      </div>
-      <div>
-        <span>
-          <a href="#">プライバシーポリシー</a>
-        </span>
-      </div>
-    </section>
-    <div>
-      <div>
         <p>
-          &copy;2023 by X Factor Co.,Ltd.
+          <a href="#">新卒採用</a>
         </p>
+      </div>
+      <div>
         <p>
-          <a href="#">Wix.com</a><span>で作成されました。</span>
+          <a href="#">中途採用はこちら</a>
         </p>
       </div>
     </div>
+  </section>
+  <section>
+    <div>
+      <div>
+        <h2><a href="#">X-FACTOR</a></h2>
+        <!-- 擬似要素::after　RECRUIT SITE -->
+      </div>
+      <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">People</a>
+        </li>
+        <li>
+          <a href="#">Culture</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+      </ul>
+    </div>
+    <div class="addres">
+      <p>
+        <span>
+            〒123-4567<br>
+            東京都新宿区西新宿 0-0-0<br>
+            <a href="">TEL: 12-3456-7890</a> 
+
+        </span>
+      </p>
+    </div>
+    <div>
+      <a href="#">コーポレートサイト</a>
+    </div>
+    <div>
+      <a href="#">プライバシーポリシー</a>
+    </div>
+  </section>
+  <footer>
+    <div>
+      <p>
+        &copy;2023 by X Factor Co.,Ltd.
+      </p>
+      <p>
+        <a href="#">Wix.com</a><span>で作成されました。</span>
+      </p>
+    </div>
   </footer>
+  <script src="./assets/js/style.js" async></script>
 </body>
 </html>
