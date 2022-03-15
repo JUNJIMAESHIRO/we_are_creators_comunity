@@ -124,7 +124,7 @@ img {
   margin: 0 auto;
 }
 
-.lmbutton{
+.lmbutton {
   width: 160px;
   height: 42px;
   margin: 0 auto 64px;
@@ -135,9 +135,54 @@ img {
   align-items: center;
 }
 
-.lmbutton a{
+.lmbutton a {
   color: inherit;
   font-size: 10px;
   font-weight: bolder;
+}
+
+#interviews .content-main-title::after {
+  content: "新卒、中途で活躍する先輩達の体験談。";
+  font-size: 13px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.interviews-container {
+
+}
+
+.interview-card {
+ position: relative;
+ margin-bottom: 30px;
+}
+
+.interview-content {
+  background-color: white;
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 64.5%;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.interview-content span{
+ display: block;
+ text-align: start;
+ margin: 0 auto;
+ width: 260px;
+ line-height: 25px;
+}
+
+.position {
+  margin:20px auto 10px !important;
+  font-size: 12px;
+}
+
+.aword {
+  font-size: 18px;
+  margin-bottom: 21px;
 }
 
