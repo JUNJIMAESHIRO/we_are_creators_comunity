@@ -60,6 +60,7 @@ img {
   font-size: 13px;
   color: inherit;
   padding-left: 20px;
+  line-height: 25px;
 }
 
 .border-block {
@@ -91,6 +92,33 @@ img {
   padding: 4px 0px 31px 0px;
 }
 
+/* 縦線（擬似要素）のcssはここに記述しています。*/
+#title,
+#aboutus {
+  position: relative;
+}
+
+#title::after,
+#aboutus::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80px;
+  background-color: black;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+}
+
+#title::after{
+  top: 93%;
+}
+
+#aboutus::after{
+  top: 102%;
+}
+/* ”〆”縦線（擬似要素）のcssはここに記述しています。*/
+
 #aboutus .content-main-title::after {
   content: "私たちについて";
 }
@@ -104,7 +132,7 @@ img {
   margin: 0 auto;
   background-color: white;
   position: relative;
-  top: -80px;
+  top: -15px;
   text-align: center;
 }
 
@@ -124,16 +152,18 @@ img {
   margin: 0 auto;
 }
 
+/* id:aboutusの最後のLEARN MOREボタンのcss */
 .lmbutton {
   width: 160px;
   height: 42px;
-  margin: 0 auto 64px;
+  margin: 15px auto 0;
   text-align: center;
   border: solid 1px black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* ”〆”id:aboutusの最後のLEARN MOREボタンのcss */
 
 .lmbutton a {
   color: inherit;
@@ -141,15 +171,15 @@ img {
   font-weight: bolder;
 }
 
+#interviews {
+  margin-top: 120px;
+}
+
 #interviews .content-main-title::after {
   content: "新卒、中途で活躍する先輩達の体験談。";
   font-size: 13px;
   text-align: center;
   line-height: 10px;
-}
-
-.interviews-container {
-
 }
 
 .interview-card {
@@ -168,6 +198,10 @@ img {
   text-align: center;
 }
 
+.interview-content span:nth-of-type(3n) {
+  margin-top: 18px;
+}
+
 .interview-content span{
  display: block;
  text-align: start;
@@ -184,5 +218,24 @@ img {
 .aword {
   font-size: 18px;
   margin-bottom: 21px;
+}
+
+.hzline {
+  color: inherit;
+  font-size: 15px;
+  /* font-family: ; */
+  padding-left: 50px ;
+  position: relative;
+}
+
+.hzline::before{
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
 
