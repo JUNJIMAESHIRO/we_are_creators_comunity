@@ -51,8 +51,8 @@
 
   <section id="title">
     <div>
-      <div>
-        <img src="./assets/img/wecre-img1.jpeg" width="320px" height="280px" alt="オフィスに立つ女性の画像" class="js-animation">
+      <div class="title-img">
+        <img src="./assets/img/wecre-img1.jpeg" width="320px" height="280px" alt="title">
       </div>
       <div>
         <div class="bg-img1"><!-- cssでbackground-img1を適用させる -->
@@ -111,7 +111,7 @@
     <div class="interviews-container">
       <div class="interview-card">
         <div class="itnerview-employee-pic">
-          <img src="./assets/img/wecre-img3.jpeg" alt="女性社員の写真" width="320px" height="419px">
+          <img src="./assets/img/wecre-img3.jpeg" alt="interview" width="320px" height="419px">
         </div>
         <div class="interview-content">
           <span class="position"> 新卒入社 | アカウントプランナー</span>
@@ -124,7 +124,7 @@
       </div>
       <div class="interview-card">
         <div class="itnerview-employee-pic">
-          <img src="./assets/img/wecre-img4.jpeg" alt="男性社員の写真" width="320px" height="419px">
+          <img src="./assets/img/wecre-img4.jpeg" alt="interview" width="320px" height="419px">
         </div>
         <div class="interview-content">
           <span class="position">新卒入社 | クリエイティブディレクター</span>
@@ -139,7 +139,7 @@
     <div class="interviews-container">
       <div class="interview-card">
         <div class="itnerview-employee-pic">
-          <img src="./assets/img/wecre-img5.jpeg" alt="男性社員の写真" width="320px" height="419px">
+          <img src="./assets/img/wecre-img5.jpeg" alt="interview" width="320px" height="419px">
         </div>
         <div class="interview-content">
           <span class="position">中途入社 | マーケティングディレクター</span>
@@ -152,7 +152,7 @@
       </div>
       <div class="interview-card">
         <div class="itnerview-employee-pic">
-          <img src="./assets/img/wecre-img6.jpeg" alt="女性社員の写真" width="320px" height="419px">
+          <img src="./assets/img/wecre-img6.jpeg" alt="interview" width="320px" height="419px">
         </div>
         <div class="interview-content">
           <span class="position">新卒入社 | アナリスト</span>
@@ -178,13 +178,13 @@
       </p>
       <div class="culture-2img">
         <div class="cultureimg1"><!-- positionで親要素を基準に場所を設定する -->
-          <img src="./assets/img/wecre-img7.jpeg" width="140px" height="159px" alt="ソファに座ってパソコンを触る男性">
+          <img src="./assets/img/wecre-img7.jpeg" width="140px" height="159px" alt="culture">
         </div>
         <div class="cultureimg2"><!-- positionで親要素を基準に場所を設定する -->
-          <img src="./assets/img/wecre-img8.jpeg" width="259px" height="186px" alt="オフィスで微笑む女性">
+          <img src="./assets/img/wecre-img8.jpeg" width="259px" height="186px" alt="culture">
         </div>
       </div>
-    </div
+    </div>
     <!-- 下記の要素の擬似要素::beforeで棒線を作る -->
     <div class="c-content-container">
       <div class="c-content-box">
@@ -237,16 +237,14 @@
       <!-- 擬似要素::after　ギャラリー -->
     </div>
     <div class="gallery-box">
-      <div class="gallery-bgimg">
-        <img src="./assets/img/background-img3.jpeg" width="320px" height="279px" alt="グラデーション背景画像">
-      </div>
+      <div class="gallery-bgimg"></div>
       <div class="gallery-slide-box">
         <!-- slickを使用 -->
         <div class="gallery-slide">
-          <div class="slide one"></div>
-          <div class="slide two"></div>
-          <div class="slide three"></div>
-          <div class="slide four"></div>
+          <div class="slide one"><img src="./assets/img/wecre-slide-img1.jpg" alt="gallery"></div>
+          <div class="slide two"><img src="./assets/img/wecre-slide-img2.jpg" alt="gallery"></div>
+          <div class="slide three"><img src="./assets/img/wecre-slide-img3.jpg" alt="gallery"></div>
+          <div class="slide four"><img src="./assets/img/wecre-slide-img4.jpg" alt="gallery"></div>
         </div>
         <!-- slickを使用 -->
      </div>  
@@ -287,29 +285,21 @@
         </li>
       </ul>
     </div>
-    <div class="addres">
-      <p>
-        〒123-4567<br>
-        東京都新宿区西新宿 0-0-0<br>
-        TEL:<a href="#">12-3456-7890</a>
-      </p>
-    </div>
-    <div>
-      <a href="#">コーポレートサイト</a>
-    </div>
-    <div>
-      <a href="#">プライバシーポリシー</a>
-    </div>
+    <p class="addres">
+      〒123-4567<br>
+      東京都新宿区西新宿 0-0-0<br>
+      TEL:<a href="#" class="compteln">12-3456-7890</a>
+    </p>
+    <a href="#" class="corpsite">コーポレートサイト</a>
+    <a href="#" class="privpolicy">プライバシーポリシー</a>
   </section>
   <footer>
-    <div>
-      <p>
-        &copy;2023 by X Factor Co.,Ltd.
-      </p>
-      <p>
-        <a href="#">Wix.com</a>で作成されました。
-      </p>
-    </div>
+    <p>
+      &copy;2023 by X Factor Co.,Ltd.
+    </p>
+    <p>
+      <a href="#">Wix.com</a>で作成されました。
+    </p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>

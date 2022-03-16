@@ -43,6 +43,11 @@ img {
   color: inherit;
 }
 
+.title-img img {
+  width: 100%;
+  height: auto;
+}
+
 .bg-img1 {
   width: 100%;
   height: 306px;
@@ -96,14 +101,14 @@ img {
 #title,
 #aboutus,
 .c-content-container,
-.gallery-box {
+.gallery-bgimg {
   position: relative;
 }
 
 #title::after,
 #aboutus::after,
 .c-content-container::before,
-.gallery-box::after {
+.gallery-bgimg::after {
   content: "";
   display: block;
   width: 1px;
@@ -121,8 +126,12 @@ img {
   top: 102%;
 }
 
-.gallery-box::after {
-  top: 85%;
+.gallery-bgimg::after {
+  top: 89%;
+}
+
+.c-content-container::before {
+  top: 3%;
 }
 
 /* ”〆”縦線（擬似要素）のcssはここに記述しています。*/
@@ -344,35 +353,29 @@ img {
   padding: 6px 0 10px;
 }
 
+.gallery-bgimg {
+  background: rgb(236,244,252);
+  background: linear-gradient(90deg, rgba(236,244,252,1) 0%, rgba(228,243,252,1) 25%, rgba(231,246,252,1) 50%, rgba(233,247,252,1) 75%, rgba(236,248,252,1) 100%);
+  width: 100%;
+  height: 87.18vw;
+  margin-bottom: 10px;
+}
+
 /* slickを使用したスライダーcss */
 
 .gallery-slide-box {
-  position: absolute;
-  top: -25%;
-  left: 0;
+  margin-top: -106%;
 }
 
 .gallery-slide {
-  width: 280px;
-  height: 268px;
+  width: 87.5vw;
+  height: 83.75vw;
 }
 
 .slide {
-  width: auto;
-  height: 268px;
+  width: 100%;
+  height: auto;
   background-repeat: no-repeat;
-}
-.one{
-  background-image: url(../img/wecre-slide-img1.jpg);
-}
-.two{
-  background-image: url(../img/wecre-slide-img2.jpg);
-}
-.three{
-  background-image: url(../img/wecre-slide-img3.jpg);
-}
-.four{
-  background-image: url(../img/wecre-slide-img4.jpg);
 }
 /* ”〆”slickを使用したスライダーcss */
 
@@ -380,7 +383,7 @@ img {
 /* section id entry */
 
 #entry {
-  margin-top: 73px;
+  margin-top: 160px;
 }
 
 .entry-block {
@@ -460,11 +463,73 @@ img {
   text-align: center;
   font-size: 16px;
   margin-bottom: 10px;
+  height: 25px;
+}
+
+.compdetail-box ul li:nth-of-type(4) {
+  margin-bottom: 32px;
 }
 
 .compdetail-box ul li a {
   color: rgb(255, 255, 255);
-  
 }
 
+.addres {
+  height: 72px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.addres .compteln{
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+}
+
+.corpsite ,
+.privpolicy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+.corpsite {
+  width: 159px;
+  height: 45px;
+  border: solid 1px rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.privpolicy {
+  width: 280px;
+  height: 24px;
+  padding-bottom: 10px;
+}
 /* ”〆”section compdetail */
+/* footer */
+
+footer {
+  height: 105px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  line-height: 25px;
+}
+
+footer p a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+/* ”〆”footer */
