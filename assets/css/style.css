@@ -94,29 +94,37 @@ img {
 
 /* 縦線（擬似要素）のcssはここに記述しています。*/
 #title,
-#aboutus {
+#aboutus,
+.c-content-container,
+.gallery-box {
   position: relative;
 }
 
 #title::after,
-#aboutus::after {
+#aboutus::after,
+.c-content-container::before,
+.gallery-box::after {
   content: "";
   display: block;
   width: 1px;
   height: 80px;
   background-color: black;
   position: absolute;
-  top: 93%;
   left: 50%;
 }
 
-#title::after{
+#title::after {
   top: 93%;
 }
 
-#aboutus::after{
+#aboutus::after {
   top: 102%;
 }
+
+.gallery-box::after {
+  top: 85%;
+}
+
 /* ”〆”縦線（擬似要素）のcssはここに記述しています。*/
 
 #aboutus .content-main-title::after {
@@ -163,13 +171,13 @@ img {
   justify-content: center;
   align-items: center;
 }
-/* ”〆”id:aboutusの最後のLEARN MOREボタンのcss */
 
 .lmbutton a {
   color: inherit;
   font-size: 10px;
   font-weight: bolder;
 }
+/* ”〆”id:aboutusの最後のLEARN MOREボタンのcss */
 
 #interviews {
   margin-top: 120px;
@@ -183,10 +191,12 @@ img {
 }
 
 .interview-card {
- position: relative;
- margin-bottom: 30px;
+  /* id:itnrerviesのテキストが書かれいるボックスのcss */
+  position: relative;
+  margin-bottom: 30px;
 }
 
+/* class interview-cardの子要素のcss */
 .interview-content {
   background-color: white;
   width: 300px;
@@ -198,7 +208,7 @@ img {
   text-align: center;
 }
 
-.interview-content span:nth-of-type(3n) {
+.interview-content span:nth-of-type(3) {
   margin-top: 18px;
 }
 
@@ -209,7 +219,8 @@ img {
  width: 260px;
  line-height: 25px;
 }
-
+/* ”〆”class interview-cardの子要素のcss */
+/* interview-content内の各spanのcss */
 .position {
   margin:20px auto 10px !important;
   font-size: 12px;
@@ -227,7 +238,8 @@ img {
   padding-left: 50px ;
   position: relative;
 }
-
+/* ”〆”interview-content内の各spanのcss */
+/* interview-contentの最後のMoreボタンの横につく横線のcss */
 .hzline::before{
   content: "";
   display: inline-block;
@@ -238,4 +250,220 @@ img {
   top: 10px;
   left: 0;
 }
+/* ”〆”interview-contentの最後のMoreボタンの左横につく横線のcss */
 
+/* section id cuture　の各要素ごとのcssを書きに記述*/
+
+.culture-bg {
+  background-image: url(../img/background-img2.jpeg);
+  width: 320px;
+  height: 472px;
+}
+
+/* #culture内のmain,subタイトルのcss */
+.culture-bg h2 {
+  padding: 31px 0 4px 0;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.culture-bg h2::after {
+  content: "働く環境や制度について";
+  padding-bottom: 21px;
+  width: 280px;
+  margin: 0 auto;
+}
+/* ”〆”#culture内のmain,subタイトルのcss */
+
+.culture-bg .c-text,
+.c-text p{
+  /* section culture内の定例文（pタグ）のcss */
+  width: 270px;
+  font-size: 12px;
+  text-align: center;
+  margin: 10px auto 31px;
+  line-height: 25px;
+}
+
+/* section cultur の二つの写真のcss */
+.culture-2img{
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.cultureimg1 {
+  /* ソファに座ってパソコンを触る男性 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cultureimg2 {
+  /* オフィスで微笑む女性の写真 */
+  position: absolute;
+  top: 105px;
+  left: 22px;
+}
+/* ”〆”section cultur の二つの写真のcss */
+
+.c-content-container .c-content-box:nth-of-type(1) {
+  padding-top: 120px;
+}
+
+.c-content-box {
+  text-align: center;
+}
+
+.c-content{
+  margin-bottom: 10px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.c-content-box .c-content {
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.c-text p {
+  margin-bottom: 33px;
+}
+
+/* ”〆”section id cuture */
+/* section id galley */
+
+#gallery .content-main-title {
+  margin-bottom: 100px;
+}
+
+#gallery .content-main-title::after {
+  content: "ギャラリー";
+  padding: 6px 0 10px;
+}
+
+/* slickを使用したスライダーcss */
+
+.gallery-slide-box {
+  position: absolute;
+  top: -25%;
+  left: 0;
+}
+
+.gallery-slide {
+  width: 280px;
+  height: 268px;
+}
+
+.slide {
+  width: auto;
+  height: 268px;
+  background-repeat: no-repeat;
+}
+.one{
+  background-image: url(../img/wecre-slide-img1.jpg);
+}
+.two{
+  background-image: url(../img/wecre-slide-img2.jpg);
+}
+.three{
+  background-image: url(../img/wecre-slide-img3.jpg);
+}
+.four{
+  background-image: url(../img/wecre-slide-img4.jpg);
+}
+/* ”〆”slickを使用したスライダーcss */
+
+/* ”〆” section id galley*/
+/* section id entry */
+
+#entry {
+  margin-top: 73px;
+}
+
+.entry-block {
+  background-color: rgb(69, 29, 160);
+  color:rgb(255, 255, 255);
+}
+
+.entry-title {
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+
+.entry-title::after {
+  content: "自分を信じて突き進め";
+  display: block;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.entry-text {
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.entrylink1 {
+  width: 159px;
+  height: 45px;
+  border: solid 1px rgb(255, 255, 255);
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.entrylink2 {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+}
+/* ”〆”section id entry */
+/* section id compdetail */
+
+#compdetail{
+  background-color: rgb(44, 44, 44);
+}
+
+.compdetail-box h2{
+  text-align: center;
+  padding: 29px 0 26px 0;
+}
+
+.compdetail-box h2::after{
+  content: "RECRUIT SITE";
+  display: block;
+  margin-top: 3px;
+  margin-left: 35px;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-family: poppins-extralight,poppins,sans-serif;
+}
+
+.compdetail-box h2 a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.compdetail-box ul li {
+  text-align: center;
+  font-size: 16px;
+}
+
+.compdetail-box ul li a {
+  color: rgb(255, 255, 255);
+  
+}
+
+/* ”〆”section compdetail */

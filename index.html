@@ -8,6 +8,9 @@
   <!-- Meta情報ここまで -->
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="apple-touch-icon" href="https://www.wix.com/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
   <title>We Are Creators Comunity</title>
 </head>
 <body>
@@ -164,118 +167,111 @@
     <!-- section　id interviewsの擬似要素::afterで縦線を作る -->
   </section>
   <section id="culture">
-    <div><!-- ←cssのbackgroundで画像を貼る-->
-      <div>
-        <h2 class="content-main-title"><span>Culture</span></h2>
-        <!-- 擬似要素::after　働く環境や制度について -->
-        <p>        
-          テキストの例です。ここをクリックして「テキス<br>
-          トを編集」を選択するか、ここをダブルクリック<br>
-          してテキストを編集してください。文字の色やフ<br>
-          ォントを変更することもできます。
-        </p>
-      </div>
+    <div class="culture-bg"><!-- ←cssのbackgroundで画像を貼る-->
+      <h2 class="content-main-title">Culture</h2>
+      <!-- 擬似要素::after　働く環境や制度について -->
+      <p class="c-text">        
+        テキストの例です。ここをクリックして「テキス<br>
+        トを編集」を選択するか、ここをダブルクリック<br>
+        してテキストを編集してください。文字の色やフ<br>
+        ォントを変更することもできます。
+      </p>
       <div class="culture-2img">
-        <div><!-- positionで親要素を基準に場所を設定する -->
+        <div class="cultureimg1"><!-- positionで親要素を基準に場所を設定する -->
           <img src="./assets/img/wecre-img7.jpeg" width="140px" height="159px" alt="ソファに座ってパソコンを触る男性">
         </div>
-        <div><!-- positionで親要素を基準に場所を設定する -->
+        <div class="cultureimg2"><!-- positionで親要素を基準に場所を設定する -->
           <img src="./assets/img/wecre-img8.jpeg" width="259px" height="186px" alt="オフィスで微笑む女性">
         </div>
       </div>
-    </div>
+    </div
     <!-- 下記の要素の擬似要素::beforeで棒線を作る -->
     <div class="c-content-container">
       <div class="c-content-box">
-        <span class="c-content">駅から徒歩5分</span>
-        <p class="c-text">
-          テキストの例です。ここをクリックして「テキス<br>
-          トを編集」を選択するか、ここをダブルクリック<br>
-          してテキストを編集してください。文字の色やフ<br>
-          ォントを変更することもできます。
-        </p>
+        <div class="c-content">
+          <p>駅から徒歩5分</p>
+        </div>
+        <div class="c-text">
+          <p>
+            テキストの例です。ここを1クリックして「テキス<br>
+            トを編集」を選択するか、ここをダブルクリック<br>
+            してテキストを編集してください。文字の色やフ<br>
+            ォントを変更することもできます。
+          </p>
+        </div>
       </div>
       <div class="c-content-box">
-        <span class="c-content">充実した教育制度</span>
-        <p class="c-text">
-          テキストの例です。ここをクリックして「テキス<br>
-          トを編集」を選択するか、ここをダブルクリック<br>
-          してテキストを編集してください。文字の色やフ<br>
-          ォントを変更することもできます。
-        </p>
+        <div class="c-content">
+          <p>充実した教育制度</p>
+        </div>
+        <div class="c-text">
+          <p>
+            テキストの例です。ここをクリックして「テキス<br>
+            トを編集」を選択するか、ここをダブルクリック<br>
+            してテキストを編集してください。文字の色やフ<br>
+            ォントを変更することもできます。
+          </p>
+        </div>
       </div>
       <div class="c-content-box">
-        <span class="c-content">マーケティングの専門経験</span>
-        <p class="c-text">
-          テキストの例です。ここをクリックして「テキス<br>
-          トを編集」を選択するか、ここをダブルクリック<br>
-          してテキストを編集してください。文字の色やフ<br>
-          ォントを変更することもできます。
-        </p>
-        <a href="#">
-          <span>LEARN MORE</span>
-        </a>
+        <div class="c-content">
+          <p>マーケティングの専門経験</p>
+        </div>
+        <div class="c-text">
+          <p>
+            テキストの例です。ここをクリックして「テキス<br>
+            トを編集」を選択するか、ここをダブルクリック<br>
+            してテキストを編集してください。文字の色やフ<br>
+            ォントを変更することもできます。
+          </p>
+        </div>
+        <div class="lmbutton">
+          <a href="#">LEARN MORE</a>
+        </div>
       </div>
     </div>
   </section>
   <section id="gallery">
     <div>
-      <h2 class="content-main-title"><span>Gallery</span></h2>
+      <h2 class="content-main-title">Gallery</h2>
       <!-- 擬似要素::after　ギャラリー -->
     </div>
-    <div>
-      <div>
+    <div class="gallery-box">
+      <div class="gallery-bgimg">
         <img src="./assets/img/background-img3.jpeg" width="320px" height="279px" alt="グラデーション背景画像">
       </div>
-      <div><!-- padding -->
-        <picture>　
-          <img src="./assets/img/wecre-slide-img1.webp" width="280px" height="268px" alt="ギャラリー画像">
-          <source srcset="./assets/img/wecre-slide-img2.jpeg">
-          <source srcset="./assets/img/wecre-slide-img3.jpeg">
-          <source srcset="./assets/img/wecre-slide-img4.jpeg">
-        </picture>
-      </div>
-    </div>
-    <div class="border-block">
-      <div>
-      <!-- 棒線をBroderで指定するためのブロック要素 -->
-      </div>
+      <div class="gallery-slide-box">
+        <!-- slickを使用 -->
+        <div class="gallery-slide">
+          <div class="slide one"></div>
+          <div class="slide two"></div>
+          <div class="slide three"></div>
+          <div class="slide four"></div>
+        </div>
+        <!-- slickを使用 -->
+     </div>  
     </div>
   </section>
   <section id="entry"> 
     <div class="entry-block">
+      <h2 class="entry-title">Entry</h2>
+      <!-- 擬似要素::after　自分を信じて突き進め -->
       <div>
-        <h2 class="footer-title">ENTRY</h2>
-        <!-- 擬似要素::after　RECRUIT SITE -->
-      </div>
-      <div>
-        <p>
-          <span>
-            X Factoryでは、マーケティング事業だけでなく<br>
-            様々な新しいことに挑戦をし続けています。自分<br>
-            の可能を発見し、社会で活躍をしたい。そのよう<br>
-            な方々からのご応募をお待ちしております。
-          </span>
+        <p class="entry-text">
+          X Factoryでは、マーケティング事業だけでなく<br>
+          様々な新しいことに挑戦をし続けています。自分<br>
+          の可能を発見し、社会で活躍をしたい。そのよう<br>
+          な方々からのご応募をお待ちしております。
         </p>
       </div>
-      <div>
-        <p>
-          <a href="#">新卒採用</a>
-        </p>
-      </div>
-      <div>
-        <p>
-          <a href="#">中途採用はこちら</a>
-        </p>
-      </div>
+      <a href="#" class="entrylink1">新卒採用</a>
+      <a href="#" class="entrylink2">中途採用はこちら</a>
     </div>
   </section>
-  <section>
-    <div>
-      <div>
-        <h2><a href="#">X-FACTOR</a></h2>
-        <!-- 擬似要素::after　RECRUIT SITE -->
-      </div>
+  <section id="compdetail">
+    <div class="compdetail-box">
+      <h2><a href="#">X-FACTOR</a></h2>
+      <!-- 擬似要素::after　RECRUIT SITE -->
       <ul>
         <li>
           <a href="#">About</a>
@@ -293,12 +289,9 @@
     </div>
     <div class="addres">
       <p>
-        <span>
-            〒123-4567<br>
-            東京都新宿区西新宿 0-0-0<br>
-            <a href="">TEL: 12-3456-7890</a> 
-
-        </span>
+        〒123-4567<br>
+        東京都新宿区西新宿 0-0-0<br>
+        TEL:<a href="#">12-3456-7890</a>
       </p>
     </div>
     <div>
@@ -314,10 +307,12 @@
         &copy;2023 by X Factor Co.,Ltd.
       </p>
       <p>
-        <a href="#">Wix.com</a><span>で作成されました。</span>
+        <a href="#">Wix.com</a>で作成されました。
       </p>
     </div>
   </footer>
-  <script src="./assets/js/style.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="./assets/js/style.js"></script>
 </body>
 </html>
