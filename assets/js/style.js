@@ -57,3 +57,14 @@ $(function(){
 //   });
 // });
 // // slickオプション一覧
+
+// hamburgermenu js
+function thrline() {
+  document.getElementById('line1').classList.toggle('line_1');
+  document.getElementById('line2').classList.toggle('line_2');
+  document.getElementById('line3').classList.toggle('line_3');
+  document.getElementById('menu-content').classList.toggle('in');
+}
+document.getElementById('thrline').addEventListener('click' , function () {
+  thrline();
+} );

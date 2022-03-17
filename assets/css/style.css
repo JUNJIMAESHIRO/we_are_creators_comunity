@@ -44,6 +44,107 @@ img {
   color: inherit;
 }
 
+/* hamberger menu用css */
+
+/* .header-right {
+
+}
+
+#menu-content {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: 0%;
+  top: -100%;
+  background: #ffffff;
+  transition: .5s;
+}
+
+#menu-content ul {
+  padding-top: 80px;
+}
+
+#menu-content ul li {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#menu-content a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 15px;
+  padding: 10px;
+  transition: .5s;
+}
+
+#menu-content li a:hover {
+  color: #ffffff;
+  background: #cd5c5c;
+  border-bottom: none;
+}
+
+
+#thrline {
+  position: absolute;
+  top: 26px;
+  left: 275px;
+  width: 22px;
+  height: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.line {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  transition: 1s;
+  border-radius: 4px;
+}
+
+#line1 {
+  top: 0;
+}
+
+#line2 {
+  top: 9px;
+}
+
+#line3 {
+  bottom: 0;
+}
+
+.in {
+  transform: translateY(100%);
+}
+
+/* jsでclickアクション後に、hamburgermenuの3本線に付与されるクラスのcss */
+
+/* .line_1,.line_2,.line_3{
+  background: #000000;
+}
+
+.line_1 {
+  transform: translateY(8px) rotate(-45deg);
+  top: 0;
+}
+
+.line_2 {
+  opacity: 0;
+}
+
+.line_3 {
+  transform: translateY(-10px) rotate(45deg);
+  bottom: 0;
+}  */
+/* ”〆”jsでclickアクション後に、hamburgermenuの3本線に付与されるクラス */
+
+/* ”〆”hamberger menu用css */
+
 .title-img img {
   width: 100%;
   height: auto;
@@ -534,3 +635,197 @@ footer p a {
 }
 
 /* ”〆”footer */
+
+/* レスポンシブ */
+@media screen and (min-width: 1280px){
+
+  .sp{
+    display: none !important;
+  }
+
+  .pc{
+    display: block;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+/* headerのレスポンシブ */
+  .header-top{
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 137px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-left{
+    margin: 25px 0 0 30px;
+  }
+
+  .header-main-text{
+    font-size: 30px;
+    margin: 27px 0 3px;
+  }
+
+  .header-sub-text{
+    font-size: 13px;
+    margin-bottom: 64px;
+  }
+
+  .header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-content ul{
+    width: 545px;
+    height: 137px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  #menu-content ul li{
+    padding: 30px 10px 50px;
+    margin-top: 40px;
+  }
+
+  #menu-content ul li a{
+    font-size: 16px;
+  }
+
+  .header-entry{
+    width: 122px;
+    height: 41px;
+    margin: 52px 30px 64px 0;
+    display: flex;
+  }
+
+  .header-entry a{
+    font-size: 16px;
+  }
+/* ”〆”headerのレスポンシブ */
+/* section id titleのレスポンシブ */
+  
+  .title-img{
+    width: 51.66vw;
+    height: 45.62vw;
+    margin-left: 44%;
+  }
+
+  .bg-img1{
+    width: 93.88vw;
+    height: 51.59vw;
+    margin: -31% 0 0 6%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-img1 h2{
+    font-size: 70px;
+    margin-left: 30px;
+    padding-top: 40px;
+  }
+
+  .bg-img1 p{
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  #title::after{
+    height: 165px;
+    top: 90%;
+  }
+/* section id titleのレスポンシブ */
+/* .content-main-titleの基本となるレスポンシブ */
+  .content-main-title{
+    margin: 150px 0 66px;
+    font-size: 45px;
+  }
+  .content-main-title::after{
+    font-size: 18px;
+  }
+/* ”〆”.content-main-titleの基本となるレスポンシブ */
+/* section id aboutusのレスポンシブ */
+
+ .white-board{
+   width: 63.18vw;
+   height: auto;
+   margin-top: -30%;
+   padding-bottom: 67px;
+ }
+
+ .white-board-title{
+   width: 56.90vw;
+   height: auto;
+   font-size: 27px;
+   padding: 76px 0 27px 0;
+   text-align: center;
+ }
+ .white-board-text{
+   width: 31.25vw;
+   height: auto;
+  font-size: 13px;
+  padding-bottom: 28px;
+ }
+.lmbutton{
+  width: 12.08vw;
+  height: 50px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+#aboutus::after{
+  height: 165px;
+  top: 100%;
+}
+/* ”〆”section id aboutusのレスポンシブ */
+/* section id interviewsのレスポンシブ */
+
+#interviews .content-main-title{
+  margin: 15% 0 3%;
+}
+.interviews-container{
+  margin-bottom: 75px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.interview-card{
+  width: 40.90vw;
+  height: auto;
+}
+.interview-content{
+  width: 29.93vw;
+  height: auto;
+  top: 81%;
+}
+.interview-content .position{
+  width: 21.52vw;
+  font-size: 13px;
+  margin: 45px 0 10px;
+}
+.interview-content .aword{
+  width: 21.52vw;
+  margin: 0 auto 19px;
+  font-size: 18px;
+}
+.interview-content .hzline{
+  padding-left: 55px;
+  font-size: 16px;
+}
+.interview-content .hzline::before{
+  width: 58px;
+  left: -25px;
+}
+/* ”〆”section id interviewsのレスポンシブ */
+}
