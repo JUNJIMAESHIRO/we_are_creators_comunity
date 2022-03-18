@@ -10,11 +10,8 @@ img{
   display: none;
 }
 @media screen and (min-width: 768px){
-  .pc{
-    display: block;
-  }
   .sp{
-    display: none;
+    display: none !important;
   }
   a{
     color: inherit;
@@ -405,7 +402,7 @@ img{
 }
 
 .culture-bg h2::after {
-  content: "働く環境や制度について";
+  content: "働く環境や制度について。";
   padding-bottom: 21px;
   width: 280px;
   margin: 0 auto;
@@ -832,16 +829,22 @@ footer p a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 95vw;
-  height: 82.90vh;
+  height: 63.33vh;
 }
 .culture-bg .content-main-title{
   padding: 98px 0 26px;
+  font-size: 45px;
+  text-align: start;
+  margin: 0 0 0 40%;
 }
 .culture-bg .content-main-title::after{
   margin-top: 3px;
 }
 .culture-bg .c-text{
   font-size: 13px;
+  width: 470px;
+  margin: 0 0 0 40%;
+  text-align: start;
 }
 .culture-2img{
   width: 100%;
@@ -850,7 +853,7 @@ footer p a {
 .cultureimg1{
   width: 31.18vw;
   height: auto;
-  margin: -10% 0 0 10%;
+  margin: 3% 0 0 10%;
 }
 .cultureimg2{
   width: 67.56vw;
