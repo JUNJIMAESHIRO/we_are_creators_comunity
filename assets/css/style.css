@@ -505,6 +505,7 @@ img{
   height: auto;
   background-repeat: no-repeat;
 }
+
 /* ”〆”slickを使用したスライダーcss */
 
 /* ”〆” section id galley*/
@@ -890,11 +891,18 @@ footer p a {
   width: 100%;
   height: 756px;
   margin-top: 0;
+  padding-left: 10%;
+  box-sizing: border-box;
 }
 .gallery-slide{
   width: initial;
   height: initial;
 }
+
+.slide img{
+  width: 90%;
+}
+
 .gallery-bgimg::after{
   height: 165px;
   top: 90%;
