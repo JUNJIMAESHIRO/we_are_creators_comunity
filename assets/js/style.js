@@ -7,7 +7,13 @@ $(function(){
     autoplaySpeed: 4000,
     speed: 500,
     arrows: false,
-    slidwsToShow:  4,
+    slidesToShow: 2,
+    responsive: [{
+      breakpoint: 768, // 480〜767px以下のサイズに適用
+        settings: {
+          slidesToShow: 1,
+        },
+    }],
   });
 });
 //   $('.slide').slick({
@@ -44,7 +50,7 @@ $(function(){
 //     // スライドのエリアにマウスオーバーしている間、自動再生を止めるかどうか。
 //     pauseOnHover: true,
 //     // スライドのエリアに画像がいくつ表示されるかを指定
-//     // slidwsToShow: 4,
+//     // slidesToShow: 4,
 //     // 一度にスライドする数
 //     // slidesToScroll: 1,
 //     // タッチスワイプに対応するかどうか
