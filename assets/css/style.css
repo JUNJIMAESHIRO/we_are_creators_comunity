@@ -918,9 +918,6 @@ footer p a {
   text-align: start;
   padding-left: 200px;
 }
-.testblock2{
-  width: 50%;
-}
 .entry-title{
   display: block;
   font-size: 80px;
@@ -939,7 +936,18 @@ footer p a {
   margin-bottom: 0;
   font-size: 13px;
 }
-
+.testblock2{
+  width: 50%;
+}
+.entrylink1{
+  width: 202px;
+  height: 66px;
+  margin: 140px auto 26px;
+  font-size: 27px;
+}
+.entrylink2{
+font-size: 13px;
+}
 
 /* ”〆”section id entryのレスポンシブ */
 /* section id compdetailのレスポンシブ */
@@ -997,6 +1005,8 @@ footer p a {
 .privpolicy{
   justify-content: initial;
 }
+
+
 /* ”〆”section id compdetailのレスポンシブ */
 /* footerのレスポンシブ */
 
