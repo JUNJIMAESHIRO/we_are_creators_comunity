@@ -8,6 +8,10 @@ img {
   height: auto;
 }
 
+.pc{
+  display: none;
+}
+
 .header-top {
   display: flex;
 }
@@ -828,4 +832,150 @@ footer p a {
   left: -25px;
 }
 /* ”〆”section id interviewsのレスポンシブ */
+/* section id cultureのレスポンシブ */
+
+.culture-bg{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 95vw;
+  height: 82.90vh;
+}
+.culture-bg .content-main-title{
+  padding: 98px 0 26px;
+}
+.culture-bg .content-main-title::after{
+  margin-top: 3px;
+}
+.culture-bg .c-text{
+  font-size: 13px;
+}
+.culture-2img{
+  width: 100%;
+  height: 100%;
+}
+.cultureimg1{
+  width: 31.18vw;
+  height: auto;
+  margin: -10% 0 0 10%;
+}
+.cultureimg2{
+  width: 67.56vw;
+  height: auto;
+  margin: -6% 0 0 24%;
+}
+.c-content-container::before{
+  height: 165px;
+  top: -180%;
+}
+.c-content-container{
+  margin-top: 450px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.c-content-container .c-content-box:nth-of-type(1){
+  padding-top: initial;
+}
+/* ”〆”section id cultureのレスポンシブ */
+/* section id galleryのレスポンシブ */
+#gallery .content-main-title{
+  margin: 170px 0px;
+}
+.gallery-bgimg{
+  width: 84.93vw;
+  height: 56.04vw;
+  margin-left: 217px;
+}
+.gallery-slide-box{
+  width: 88.88vw;
+  height: 52.5vw;
+  margin: initial;
+  display: none;
+}
+.gallery-box .gallery-slide-box .gallery-slide{
+  width: 100%;
+  height: 100%;
+}
+.gallery-bgimg::after{
+  height: 165px;
+  top: 90%;
+  left: 40%;
+}
+/* ”〆”section id galleryのレスポンシブ */
+/* section id entryのレスポンシブ */
+
+#entry{
+  margin-top: 200px;
+}
+
+/* ”〆”section id entryのレスポンシブ */
+/* section id compdetailのレスポンシブ */
+
+#compdetail{
+  display: flex;
+  justify-content: space-around;
+}
+.compdetail-box{
+  margin-right: 20px;
+  height: 25.34vw;
+}
+.compdetail-box h2{
+  padding: 90px 0;
+  text-align: start;
+}
+.compdetail-box h2 a{
+  font-size: 30px;
+}
+.compdetail-box h2::after{
+  font-size: 13px;
+  margin: 0;
+  padding:10px 0 0 70px;
+}
+.compdetail-box ul{
+  display: flex;
+  margin: 20px 0 0 0;
+  text-align: start;
+}
+.compdetail-box ul li{
+  font-size: 16px;
+  padding: 10px 45px 10px 0;
+}
+
+.compdetail-box2{
+  padding-top: 90px;
+}
+.compdetail-box2 p,
+.compdetail-box2 a{
+  font-size: 13px;
+  margin-left: 20px;
+}
+.compdetail-box2 .addres{
+  margin: 0 auto;
+  margin-left: 20px;
+  text-align: start;
+}
+.compdetail-box2 .addres a{
+  margin-left: 0;
+}
+.corpsite{
+  margin: 30px 0 30px 0;
+  text-align: start;
+}
+.privpolicy{
+  justify-content: initial;
+}
+/* ”〆”section id compdetailのレスポンシブ */
+/* footerのレスポンシブ */
+
+footer{
+  height: 70px;
+  flex-direction: initial;
+}
+footer p{
+  display: flex;
+}
+footer a{
+  margin-left: 5px;
+}
+/* ”〆”footerのレスポンシブ */
 }
