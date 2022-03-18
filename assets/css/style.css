@@ -1,23 +1,45 @@
-a {
+a{
   text-decoration: none;
   cursor: pointer;
 }
-
-img {
+img{
   width: 100%;
   height: auto;
 }
-
 .pc{
   display: none;
+}
+@media screen and (min-width: 768px){
+  .pc{
+    display: block;
+  }
+  .sp{
+    display: none;
+  }
+  a{
+    color: inherit;
+  }
 }
 
 .header-top {
   display: flex;
 }
-
+@media screen and (min-width: 768px){
+  .header-top{
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 137px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .header-left {
   margin: 25px 0px 0px 20px;
+}
+@media screen and (min-width: 768px){
+  .header-left{
+    margin: 25px 0 0 30px;
+  }
 }
 
 .header-main-text a {
@@ -641,37 +663,8 @@ footer p a {
 /* ”〆”footer */
 
 /* レスポンシブ */
-@media screen and (min-width: 1280px){
-
-  .sp{
-    display: none !important;
-  }
-
-  .pc{
-    display: block;
-  }
-  
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-
-  img{
-    width: 100%;
-    height: auto;
-  }
+@media screen and (min-width: 768px){
 /* headerのレスポンシブ */
-  .header-top{
-    max-width: 1240px;
-    margin: 0 auto;
-    height: 137px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .header-left{
-    margin: 25px 0 0 30px;
-  }
 
   .header-main-text{
     font-size: 30px;
@@ -749,6 +742,7 @@ footer p a {
     height: 165px;
     top: 90%;
   }
+  
 /* section id titleのレスポンシブ */
 /* .content-main-titleの基本となるレスポンシブ */
   .content-main-title{
@@ -878,23 +872,28 @@ footer p a {
 }
 /* ”〆”section id cultureのレスポンシブ */
 /* section id galleryのレスポンシブ */
+.gallery-box{
+  position: relative;
+}
 #gallery .content-main-title{
   margin: 170px 0px;
 }
 .gallery-bgimg{
-  width: 84.93vw;
-  height: 56.04vw;
-  margin-left: 217px;
+  width: 85%;
+  height: 807px;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  z-index: -1;
 }
 .gallery-slide-box{
-  width: 88.88vw;
-  height: 52.5vw;
-  margin: initial;
-  display: none;
-}
-.gallery-box .gallery-slide-box .gallery-slide{
   width: 100%;
-  height: 100%;
+  height: 756px;
+  margin-top: 0;
+}
+.gallery-slide{
+  width: initial;
+  height: initial;
 }
 .gallery-bgimg::after{
   height: 165px;

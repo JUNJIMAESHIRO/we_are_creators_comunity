@@ -7,6 +7,7 @@ $(function(){
     autoplaySpeed: 4000,
     speed: 500,
     arrows: false,
+    slidwsToShow:  4,
   });
 });
 //   $('.slide').slick({
