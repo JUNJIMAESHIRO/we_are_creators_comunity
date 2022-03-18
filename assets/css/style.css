@@ -907,6 +907,39 @@ footer p a {
 #entry{
   margin-top: 200px;
 }
+.entry-block{
+  height: 27.36vw;
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+}
+.testblock{
+  width: 50%;
+  text-align: start;
+  padding-left: 200px;
+}
+.testblock2{
+  width: 50%;
+}
+.entry-title{
+  display: block;
+  font-size: 80px;
+  text-align: start;
+  padding: 0;
+  margin-top: 80px;
+  margin-bottom: 21px;
+}
+.entry-title::after{
+  margin-top: 12px;
+  font-size: 18px;
+}
+.entry-text{
+  text-align: start;
+  padding-right: 210px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
 
 /* ”〆”section id entryのレスポンシブ */
 /* section id compdetailのレスポンシブ */
