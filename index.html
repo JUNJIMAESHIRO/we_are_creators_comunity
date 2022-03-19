@@ -15,7 +15,7 @@
 </head>
 <body>
   <header>
-    <div class=".waccmawid">
+    <div class="waccmawid">
       <div class="header-top">
         <div class="header-left">
           <h1 class="header-main-text">
@@ -26,14 +26,14 @@
           </p>
         </div>
         <!-- ここからhamberger-menuのhtml -->
-        <div class="header-right">
+        <div class="header-right pc">
           <div id="thrline">
             <span class="line" id="line1"></span>
             <span class="line" id="line2"></span>
             <span class="line" id="line3"></span>
           </div>
           <!-- ここからAction後に表示されるメニュー -->
-          <nav id="menu-content">
+          <nav id="menu-content" class="pc">
             <ul>
               <li><a href="#">About</a></li>
               <li><a href="#">People</a></li>
@@ -58,7 +58,7 @@
   <section id="title">
     <div>
       <div class="title-img waccmawid">
-        <img src="./assets/img/wecre-img1.jpeg" width="320px" height="280px" alt="title">
+        <img src="./assets/img/wecre-img1.jpeg" width="320" height="280" alt="title">
       </div>
       <div>
         <div class="bg-img1"><!-- cssでbackground-img1を適用させる -->
@@ -84,7 +84,7 @@
     <!-- ::after私たちについて -->
     <div>
       <div class="aboutus-board">
-        <img src="./assets/img/wecre-img2.jpeg" alt="ミーティング画像" width="320px" height="280px">
+        <img src="./assets/img/wecre-img2.jpeg" alt="ミーティング画像" width="320" height="280">
         <div class="white-board waccmawid">
           <p class="white-board-title">
             ビッグデータ x AIの力で、<br>
@@ -116,10 +116,10 @@
       <h2 class="content-main-title">Interviews</h2>
       <!-- 擬似要素::after新卒、中途で活躍する先輩達の体験談。 -->
     </div>
-    <div class="interviews-container">
+    <div class="interviews-container waccmawid">
       <div class="interview-card">
         <div class="itnerview-employee-pic">
-          <img src="./assets/img/wecre-img3.jpeg" alt="interview" width="320px" height="419px">
+          <img src="./assets/img/wecre-img3.jpeg" alt="interview" width="320" height="419">
         </div>
         <div class="interview-content">
           <span class="position"> 新卒入社 | アカウントプランナー</span>
@@ -132,7 +132,7 @@
       </div>
       <div class="interview-card">
         <div class="itnerview-employee-pic">
-          <img src="./assets/img/wecre-img4.jpeg" alt="interview" width="320px" height="419px">
+          <img src="./assets/img/wecre-img4.jpeg" alt="interview" width="320" height="419">
         </div>
         <div class="interview-content">
           <span class="position">新卒入社 | クリエイティブディレクター</span>
@@ -144,10 +144,10 @@
         </div>
       </div>
     </div>
-    <div class="interviews-container">
+    <div class="interviews-container waccmawid">
       <div class="interview-card">
         <div class="itnerview-employee-pic">
-          <img src="./assets/img/wecre-img5.jpeg" alt="interview" width="320px" height="419px">
+          <img src="./assets/img/wecre-img5.jpeg" alt="interview" width="320" height="419">
         </div>
         <div class="interview-content">
           <span class="position">中途入社 | マーケティングディレクター</span>
@@ -160,7 +160,7 @@
       </div>
       <div class="interview-card">
         <div class="itnerview-employee-pic">
-          <img src="./assets/img/wecre-img6.jpeg" alt="interview" width="320px" height="419px">
+          <img src="./assets/img/wecre-img6.jpeg" alt="interview" width="320" height="419">
         </div>
         <div class="interview-content">
           <span class="position">新卒入社 | アナリスト</span>
@@ -179,17 +179,17 @@
       <h2 class="content-main-title waccmawid">Culture</h2>
       <!-- 擬似要素::after　働く環境や制度について -->
       <p class="c-text waccmawid">        
-        テキストの例です。ここをクリックして「テキス<br class="sp">
-        トを編集」を選択するか、ここをダブルクリック<br class="sp">
-        してテキストを編集してください。文字の色やフ<br class="sp">
+        テキストの例です。ここをクリックして「テキス<br>
+        トを編集」を選択するか、ここをダブルクリック<br>
+        してテキストを編集してください。文字の色やフ<br>
         ォントを変更することもできます。
       </p>
       <div class="culture-2img waccmawid">
         <div class="cultureimg1"><!-- positionで親要素を基準に場所を設定する -->
-          <img src="./assets/img/wecre-img7.jpeg" width="140px" height="159px" alt="culture">
+          <img src="./assets/img/wecre-img7.jpeg" width="140" height="159" alt="culture">
         </div>
         <div class="cultureimg2"><!-- positionで親要素を基準に場所を設定する -->
-          <img src="./assets/img/wecre-img8.jpeg" width="259px" height="186px" alt="culture">
+          <img src="./assets/img/wecre-img8.jpeg" width="259" height="186" alt="culture">
         </div>
       </div>
     </div>
@@ -245,7 +245,7 @@
       <!-- 擬似要素::after　ギャラリー -->
     </div>
     <div class="gallery-box">
-      <div class="gallery-slide-box">
+      <div class="gallery-slide-box waccmawid">
         <!-- slickを使用 -->
         <div class="gallery-slide">
           <div class="slide one"><img src="./assets/img/wecre-slide-img1.jpg" alt="gallery"></div>
@@ -254,7 +254,7 @@
           <div class="slide four"><img src="./assets/img/wecre-slide-img4.jpg" alt="gallery"></div>
         </div>
         <!-- slickを使用 -->
-     </div>  
+      </div>  
       <div class="gallery-bgimg"></div>
     </div>
   </section>

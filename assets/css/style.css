@@ -11,9 +11,13 @@ img{
 }
 .waccmawid{
   max-width: 1024px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px){
+  .pc{
+    display: block;
+  }
   .sp{
     display: none !important;
   }
@@ -278,7 +282,7 @@ img{
   margin: 0 auto;
   background-color: white;
   position: relative;
-  top: -15px;
+  top: -23.07vw;
   text-align: center;
 }
 
@@ -340,7 +344,7 @@ img{
   width: 300px;
   height: 150px;
   position: absolute;
-  top: 64.5%;
+  bottom: 0;
   left: 0;
   z-index: 1;
   text-align: center;
@@ -353,14 +357,14 @@ img{
 .interview-content span{
  display: block;
  text-align: start;
- margin: 0 auto;
+ margin: 15px auto 0;
  width: 260px;
  line-height: 25px;
 }
 /* ”〆”class interview-cardの子要素のcss */
 /* interview-content内の各spanのcss */
 .position {
-  margin:20px auto 10px !important;
+  margin:20px auto 10px;
   font-size: 12px;
 }
 
@@ -427,22 +431,26 @@ img{
 .culture-2img{
   position: relative;
   margin: 0 auto;
-  width: 280px;
+  width: 90%;
 }
 
 .cultureimg1 {
   /* ソファに座ってパソコンを触る男性 */
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   z-index: 1;
+  height: auto;
+  width: 35.89vw;
 }
 
 .cultureimg2 {
   /* オフィスで微笑む女性の写真 */
   position: absolute;
-  top: 105px;
-  left: 22px;
+  top: 25.64vw;
+  left: 23.07vw;
+  height: auto;
+  width: 66.41vw;
 }
 /* ”〆”section cultur の二つの写真のcss */
 
@@ -487,13 +495,14 @@ img{
   background: linear-gradient(90deg, rgba(236,244,252,1) 0%, rgba(228,243,252,1) 25%, rgba(231,246,252,1) 50%, rgba(233,247,252,1) 75%, rgba(236,248,252,1) 100%);
   width: 100%;
   height: 87.18vw;
-  margin-bottom: 10px;
+  margin-top: -250px;
+  z-index: -1;
 }
 
 /* slickを使用したスライダーcss */
 
 .gallery-slide-box {
-  margin-top: -106%;
+  margin-top: -20%;
 }
 
 .gallery-slide {
@@ -667,12 +676,10 @@ footer p a {
 /* レスポンシブ */
 @media screen and (min-width: 768px){
 /* headerのレスポンシブ */
-
   .header-main-text{
     font-size: 30px;
     margin: 27px 0 3px;
   }
-
   .header-sub-text{
     font-size: 13px;
     margin-bottom: 64px;
@@ -683,9 +690,12 @@ footer p a {
     justify-content: center;
     align-items: center;
   }
+  .header-left{
+    margin: 25px 0 0 60px;
+  }
 
   #menu-content ul{
-    width: 545px;
+    width: 38.92vw;
     height: 137px;
     display: flex;
     justify-content: space-around;
@@ -741,7 +751,7 @@ footer p a {
   }
 
   #title::after{
-    height: 165px;
+    height: 11.70vw;
     top: 90%;
   }
   
@@ -760,7 +770,7 @@ footer p a {
  .white-board{
    width: 63.18vw;
    height: auto;
-   margin-top: -30%;
+   margin-top: -25%;
    padding-bottom: 67px;
  }
 
@@ -783,49 +793,62 @@ footer p a {
   font-size: 16px;
   margin: 0 auto;
 }
-
 #aboutus::after{
-  height: 165px;
+  height: 11.78vw;
   top: 100%;
 }
 /* ”〆”section id aboutusのレスポンシブ */
 /* section id interviewsのレスポンシブ */
+#interviews{
+  margin-top: 20%;
+}
 
 #interviews .content-main-title{
-  margin: 15% 0 3%;
+  margin: 0 0 3%;
 }
 .interviews-container{
   margin-bottom: 75px;
-  padding: 0 100px;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .interview-card{
   width: 40.90vw;
   height: auto;
+  margin-bottom: 0;
+}
+.interviews-container .interview-card:nth-of-type(1){
+  margin-right: 5.14vw;
 }
 .interview-content{
   width: 29.93vw;
   height: auto;
-  top: 81%;
+  bottom: 0;
+  top: initial;
 }
 .interview-content .position{
   width: 21.52vw;
+  height: auto;
   font-size: 13px;
-  margin: 45px 0 10px;
+  margin: 45px auto 10px;
 }
 .interview-content .aword{
   width: 21.52vw;
+  height: auto;
   margin: 0 auto 19px;
   font-size: 18px;
 }
+.interview-content span:nth-of-type(3) {
+  margin-top: 18px;
+  width: 21.52vw;
+}
 .interview-content .hzline{
-  padding-left: 55px;
   font-size: 16px;
+  padding-left: 65px;
 }
 .interview-content .hzline::before{
   width: 58px;
-  left: -25px;
+  left: 0;
 }
 /* ”〆”section id interviewsのレスポンシブ */
 /* section id cultureのレスポンシブ */
@@ -841,13 +864,14 @@ footer p a {
   font-size: 45px;
   text-align: start;
   margin: 0 0 0 45%;
+  width: auto;
 }
 .culture-bg .content-main-title::after{
   margin-top: 3px;
 }
 .culture-bg .c-text{
   font-size: 13px;
-  width: 470px;
+  width: auto;
   margin: 0 0 0 45%;
   text-align: start;
 }
@@ -858,15 +882,17 @@ footer p a {
 .cultureimg1{
   width: 32.07vw;
   height: auto;
+  left: 50px;
 }
 .cultureimg2{
   width: 67.56vw;
   height: auto;
-  margin: 0 0 0 auto;
+  top: 110px;
+  left: 200px;
 }
 .c-content-container::before{
-  height: 165px;
-  top: -225%;
+  height: 11.78vw;
+  top: -140%;
 }
 .c-content-container{
   margin: 450px auto 30px;
@@ -875,6 +901,9 @@ footer p a {
 }
 .c-content-container .c-content-box:nth-of-type(1){
   padding-top: initial;
+}
+.culture-bg .c-text p{
+  width: 19.28vw;
 }
 /* ”〆”section id cultureのレスポンシブ */
 /* section id galleryのレスポンシブ */
@@ -917,26 +946,23 @@ footer p a {
 /* section id entryのレスポンシブ */
 
 #entry{
-  margin-top: 200px;
+  margin-top: 260px;
 }
 .entry-block{
-  height: 27.36vw;
+  height: auto;
   display: flex;
   justify-content: space-around;
   text-align: start;
 }
 .testblock{
   width: 50%;
-  text-align: start;
-  padding-left: 200px;
 }
 .entry-title{
   display: block;
   font-size: 80px;
   text-align: start;
-  padding: 0;
-  margin-top: 80px;
-  margin-bottom: 21px;
+  padding: 0 0 0 130px;
+  margin: 80px auto 21px;
 }
 .entry-title::after{
   margin-top: 12px;
@@ -944,8 +970,8 @@ footer p a {
 }
 .entry-text{
   text-align: start;
-  padding-right: 210px;
-  margin-bottom: 0;
+  padding-left: 130px;
+  margin-bottom: 30px;
   font-size: 13px;
 }
 .testblock2{
