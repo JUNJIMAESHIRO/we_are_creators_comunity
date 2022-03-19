@@ -9,6 +9,9 @@ img{
 .pc{
   display: none;
 }
+.sp{
+  display: block;
+}
 .waccmawid{
   max-width: 1024px;
   margin: 0 auto;
@@ -19,7 +22,7 @@ img{
     display: block;
   }
   .sp{
-    display: none !important;
+    display: none;
   }
   a{
     color: inherit;
