@@ -32,6 +32,7 @@ img{
 .header-top {
   display: flex;
 }
+
 @media screen and (min-width: 768px){
   .header-top{
     max-width: 1240px;
@@ -44,9 +45,17 @@ img{
 .header-left {
   margin: 25px 0px 0px 20px;
 }
+
 @media screen and (min-width: 768px){
   .header-left{
     margin: 25px 0 0 30px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .header-main-text{
+    font-size: 30px;
+    margin: 27px 0 3px;
   }
 }
 
@@ -683,10 +692,6 @@ footer p a {
 /* レスポンシブ */
 @media screen and (min-width: 768px){
 /* headerのレスポンシブ */
-  .header-main-text{
-    font-size: 30px;
-    margin: 27px 0 3px;
-  }
   .header-sub-text{
     font-size: 13px;
     margin-bottom: 64px;
