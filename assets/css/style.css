@@ -9,6 +9,10 @@ img{
 .pc{
   display: none;
 }
+.waccmawid{
+  max-width: 1024px;
+}
+
 @media screen and (min-width: 768px){
   .sp{
     display: none !important;
@@ -720,7 +724,7 @@ footer p a {
   .bg-img1{
     width: 93.88vw;
     height: 51.59vw;
-    margin: -31% 0 0 6%;
+    margin: -40% 0 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -830,13 +834,13 @@ footer p a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 95vw;
-  height: 63.33vh;
+  height: 65.14vw;
 }
 .culture-bg .content-main-title{
   padding: 98px 0 26px;
   font-size: 45px;
   text-align: start;
-  margin: 0 0 0 40%;
+  margin: 0 0 0 45%;
 }
 .culture-bg .content-main-title::after{
   margin-top: 3px;
@@ -844,7 +848,7 @@ footer p a {
 .culture-bg .c-text{
   font-size: 13px;
   width: 470px;
-  margin: 0 0 0 40%;
+  margin: 0 0 0 45%;
   text-align: start;
 }
 .culture-2img{
@@ -852,22 +856,20 @@ footer p a {
   height: 100%;
 }
 .cultureimg1{
-  width: 31.18vw;
+  width: 32.07vw;
   height: auto;
-  margin: 3% 0 0 10%;
 }
 .cultureimg2{
   width: 67.56vw;
   height: auto;
-  margin: -6% 0 0 24%;
+  margin: 0 0 0 auto;
 }
 .c-content-container::before{
   height: 165px;
-  top: -180%;
+  top: -225%;
 }
 .c-content-container{
-  margin-top: 450px;
-  margin-bottom: 30px;
+  margin: 450px auto 30px;
   display: flex;
   justify-content: space-around;
 }
